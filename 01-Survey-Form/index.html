@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Indonesian Food Survey</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body> 
+        <!-- TODO: PADDING ON FORMS-->
+        <div class="main-body">
+        <h1 id="title">Survey On Indonesian Foods</h1>
+        <p id="description">what's your opinion on the various indonesian foods?</p>
+        <hr>
+        <form id="survey-form">
+            <label for="name" id="name-label">Your Name:</label><input id="name" class="inline" type="text" required placeholder="Sri Budi">
+            <label for="email" id="email-label">Your Email: </label><input id="email" class="inline" type="email" required placeholder="sribudi@outlook.net">
+            <label for="number" id="number-label">Your Age: (Optional)</label><input id="number" class="inline" type="number" pattern="[0-9]+" placeholder=18 min=13 max=99>
+            <label for="dropdown">Nationality:</label><select id="dropdown">
+                <option value="">Native Indonesian</option>
+                <option value="1">Of Indonesian Descent</option>
+                <option value="2">Non-Indonesian</option>
+            </select>
+            <hr>
+            <legend>How much would you consider yourself familiar with Indonesian Cuisine?</legend>
+            <label for="a-lot"><input id="a-lot" type="radio" name="familiarity" value="1"> A lot</label>
+            <label for="some"><input id="some" type="radio" name="familiarity" value="2"> Some</label>
+            <label for="a-lit"><input id="a-lit" type="radio" name="familiarity" value="3"> A little</label>
+            <label>Please tell us about your favorite Indonesian Food and why:<textarea id="bio" name="bio" rows="4" cols="60" placeholder="Terang bulan, karena..."></textarea></label>
+            <hr>
+            <label for="consent-waiver" class="waiver"><input type="checkbox" id="consent-waiver" value="true">* By submitting this survey form, I understand that I have consented for my data here to be used in research papers</label>
+            <label for="newsletter" class="waiver"><input type="checkbox" id="newsletter" value="true">* I want to get updates on this ongoing survey through a newsletter.</label>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+        </div>
+    </body>
+</html>
