@@ -10,7 +10,7 @@ body {
 .main-body {
     width: 80%;
     max-width: 800px;
-    background-color: rgb(211, 102, 102);
+    background-color: rgb(235, 121, 121);
     margin-left: auto;
     margin-right: auto;
     padding: 30px;
@@ -76,7 +76,7 @@ input[type="submit"] {
     margin: 1em auto;
     height: 2em;
     font-size: 1.1rem;
-    background-color: rgb(163, 46, 46);
+    background-color: rgb(224, 76, 76);
     border: none;
     min-width: 300px;
 }
