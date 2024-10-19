@@ -1,0 +1,200 @@
+<!---
+Objective: Build an app that is functionally similar to https://technical-documentation-page.freecodecamp.rocks. Do not copy this demo project.
+
+User Stories:
+
+    You can see a main element with a corresponding id="main-doc", which contains the page's main content (technical documentation)
+    Within the #main-doc element, you can see several section elements, each with a class of main-section. There should be a minimum of five
+    The first element within each .main-section should be a header element, which contains text that describes the topic of that section.
+    Each section element with the class of main-section should also have an id that corresponds with the text of each header contained within it. Any spaces should be replaced with underscores (e.g. The section that contains the header "JavaScript and Java" should have a corresponding id="JavaScript_and_Java")
+    The .main-section elements should contain at least ten p elements total (not each)
+    The .main-section elements should contain at least five code elements total (not each)
+    The .main-section elements should contain at least five li items total (not each)
+    You can see a nav element with a corresponding id="navbar"
+    The navbar element should contain one header element which contains text that describes the topic of the technical documentation
+    Additionally, the navbar should contain link (a) elements with the class of nav-link. There should be one for every element with the class main-section
+    The header element in the #navbar must come before any link (a) elements in the navbar
+    Each element with the class of nav-link should contain text that corresponds to the header text within each section (e.g. if you have a "Hello world" section/header, your navbar should have an element which contains the text "Hello world")
+    When you click on a navbar element, the page should navigate to the corresponding section of the #main-doc element (e.g. If you click on a .nav-link element that contains the text "Hello world", the page navigates to a section element with that id, and contains the corresponding header)
+    On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user
+    Your technical documentation should use at least one media query
+
+Fulfill the user stories and pass all the tests below to complete this project. Give it your own personal style. Happy Coding!
+
+Note: Be sure to add <link rel="stylesheet" href="styles.css"> in your HTML to link your stylesheet and apply your CSS--->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BYOND Documentation Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <!--Navbar starts here-->
+        <nav id="navbar">
+            <header class="center-align"><h1>DM Bible</h1></header>
+            <ul>
+                <li><a class="nav-link" href="#Meet_the_Dream_Maker">Meet the Dream Maker</a></li>
+                <li><a class="nav-link" href="#Navigating_the_Code_Tree">Navigating the Code Tree</a></li>
+                <li><a class="nav-link" href="#Not_Just_One_Language">Not Just One Language</a></li>
+                <li><a class="nav-link" href="#Formatting_The_Code">Formatting The Code</a></li>
+                <li><a class="nav-link" href="#Code_Comments">Code Comments</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            
+            <!--Part of the page that displays main content starts here-->
+            <section class="main-section" id="Meet_the_Dream_Maker">
+                <header><h1>Meet the Dream Maker</h1></header>
+                <p> 
+                        DM is a programming language for the creation of multi-user worlds. By ‘world’ I mean
+                    a virtual multi-media environment where people assume personae through which they interact
+                    with one another and computer-controlled objects. DM is used to run what is essentially a game engine, a bunch of softwares bundled together
+                    As a whole, we refer to this collection of software as BYOND, which stands for Build Your Own Net Dream–an apt description of its
+                    purpose and also of how far it has wandered <em>beyond</em> our original plans. But that is another
+                    story! Below are the tree main programs that makes up BYOND:
+                </p>
+                <ul>
+                    <li>Dream Seeker (The Client)</li>
+                    <li>Dream Daemon (The Server)</li>
+                    <li>Dream Maker (The Compiler)</li>
+                </ul>
+                <p>
+                    Every introduction to a programming language must begin with the same example. Call
+                    it destiny, inevitability, or pure chance; it is rather uncanny that the name of the universal
+                    introductory example is hello world. Spooky, no? That’s exactly what happens in this example–
+                    we say hello to the world.                
+                </p>
+                <pre><code>
+                    mob
+                        Login()
+                            world << "Hello, world!"
+                </code>
+                </pre>
+                <p>
+                        If you have any prior programming experience, the last line probably looks vaguely sensible.
+                    It outputs the text inside the double quotes to the whole world. But what on earth is a mob
+                    and why is each line indented like stair-steps? All in good time. For now, simply understand
+                    that the player’s avatar in the game is a mob. When a player logs in, the server is instructed to
+                    output the message “Hello, world” to everybody.
+                </p>
+            </section>
+            <section class="main-section" id="Navigating_the_Code_Tree">
+                <header><h1>Navigating the Code Tree</h1></header>
+                <p> 
+                    A DM program begins at the root of the tree and descends along multiple branches. Each
+                    branching point (or node) is given a name to distinguish it from the other branches at the same
+                    level. Names are case-sensitive (so apple and Apple are different). They may be any length and
+                    may contain any combination of letters, numbers, and underscores as long as they do not start
+                    with a number. 
+                </p>
+                <p>Consider the following code:</p>
+                <pre>
+                <code>
+                    turf
+                        trap
+                            pit
+                            quicksand
+                            glue
+                </code>
+                </pre>
+                <p>
+                        Several types of traps are defined (though no instructions have been included to actually
+                    make them work). Here, each type of object is on a line by itself and indentation is used
+                    to define the relationships between them. The three siblings pit, quicksand, and glue are all
+                    children of trap, which is in turn derived from turf, the map terrain object.
+                </p>
+            </section>
+            <section class="main-section" id="Not_Just_One_Language">
+                <header><h1>Not Just One Language</h1></header>
+                <p>
+                    BYOND makes uses of other languages in developing in its language, Such as database back-end languages such as:
+                </p>
+                <ul>
+                    <li>SQL</li>
+                    <li>DDL</li>
+                    <li>DML</li>
+                </ul>
+                <p>
+                    Also, considering the way BYOND displays UI's through web browsers. front-end languages such as:
+                </p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>
+                    Are all quite commonly used within the framework of BYOND as a whole.
+                </p>
+                </code>
+            </section>
+            <section class="main-section" id="Formatting_The_Code">
+                <header><h1>Formatting The Code</h1></header>
+                <p> 
+                    DM provides some flexibility in the way code is formatted. For example, blank lines may be
+                    inserted between other lines without effect. This may help code from getting too dense and
+                    unreadable.
+                </p>
+                <p> 
+                    To compress code that is overly spread out, a semicolon may be used in place of a newline.
+                    In this way, several children may reside on the same line. To put a parent and child on the same
+                    line, a slash is used. It is equivalent to a newline followed by an additional level of indentation.
+                    The following code is equivalent to the previous example:
+                </p>
+                <pre>
+                    <code>
+                        turf
+                            trap
+                                pit
+                                quicksand
+                                glue
+                    </code>
+                    </pre>
+                <p>
+                    in addition, braces may be used to mark the beginning and ending of a node’s children.
+                    C, C++, and Java programmers may feel more at home using this style. With the compiler
+                    checking both braces and indentation, it is hard for simple mistakes to slip through unnoticed.
+                    Sometimes it is the simple spelling and typesetting errors which are the hardest to see.
+                    Here is yet another encoding of the same objects, this time using braces:
+                </p>
+                <pre>
+                    <code>
+                        turf/trap
+                        {
+                            pit
+                            quicksand
+                            glue
+                        }
+                    </code>
+                    </pre>
+            </section>
+            <section class="main-section" id="Code_Comments">
+                <header><h1>Code Comments</h1></header>
+                <p> 
+                    When you start writing code as confusing and tangled as the last example, it would be a good
+                    idea to leave a few clues behind. Otherwise you may find it incomprehensible the next time you
+                    visit, a rather embarrassing situation. There are two ways to write comments in the code. One
+                    is for multi-line comments and the other is for single line ones. Example:
+                </p>
+                <pre>
+                    <code>
+                        /*
+                            This is a multi-line comment.
+                            You can put whatever you want inside of it.
+                            The compiler just skips right over.
+                            Some of you may recognize it as a C style comment.
+                        */
+                        This is a single-line comment.
+                        Some people know of it as the C++ style comment.
+                    </code>
+                </pre>
+                <p>
+                    Comments can occur anywhere in the code–at the end of lines, on lines by themselves, or
+                    wherever. They are often used to make statements of intent or purpose. It frequently takes only
+                    a very short note to make code much easier to read.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
