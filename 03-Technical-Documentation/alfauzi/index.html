@@ -1,71 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Python Documentation</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
     <nav id="navbar">
-      <header>Python Documentation</header>
-      <ul>
-        <li><a class="nav-link" href="#Apa_itu_Python">Apa itu Bahasa Pemrograman Python?</a></li>
-        <li><a class="nav-link" href="#Kenapa_Python_Terkenal">Kenapa Python Begitu Terkenal?</a></li>
-        <li><a class="nav-link" href="#Tipe_Data">Tipe Data dalam Python</a></li>
-        <li><a class="nav-link" href="#Operator">Operator dalam Python</a></li>
-        <li><a class="nav-link" href="#Percabangan">Percabangan (If-Else)</a></li>
-        <li><a class="nav-link" href="#Looping">Looping (For dan While)</a></li>
-        <li><a class="nav-link" href="#Input">Mengambil Input dari Pengguna</a></li>
-      </ul>
+        <header>Python Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#Apa_itu_Bahasa_Pemrograman_Python?">Apa itu Bahasa Pemrograman Python?</a></li>
+            <li><a class="nav-link" href="#Kenapa_Python_Begitu_Terkenal?">Kenapa Python Begitu Terkenal?</a></li>
+            <li><a class="nav-link" href="#Tipe_Data_dalam_Python">Tipe Data dalam Python</a></li>
+            <li><a class="nav-link" href="#Tipe_Data_String">Tipe Data String</a></li>
+            <li><a class="nav-link" href="#Operator_dalam_Python">Operator dalam Python</a></li>
+            <li><a class="nav-link" href="#Variabel_dan_Identifier">Variabel dan Identifier</a></li>
+            <li><a class="nav-link" href="#Percabangan_If_Else">Percabangan If Else</a></li>
+            <li><a class="nav-link" href="#Looping_For_While">Looping For While</a></li>
+            <li><a class="nav-link" href="#Break_dan_Continue">Break dan Continue</a></li>
+            <li><a class="nav-link" href="#Mengambil_Input_dari_Pengguna">Mengambil Input dari Pengguna</a></li>
+            <li><a class="nav-link" href="#Sumber_referensi">Sumber referensi</a></li>
+        </ul>
     </nav>
 
     <main id="main-doc">
-      <!-- Apa itu Python -->
-      <section class="main-section" id="Apa_itu_Python">
-          <header>Apa itu Bahasa Pemrograman Python?</header>
-          <img src="https://ictslab.com/wp-content/uploads/2019/03/d1326ca6cca8038cd115a061b4e2b3bc-840x430.png" alt="">
-        <article>
-          <p>Python merupakan bahasa pemrograman tingkat tinggi dan merupakan salah satu bahasa pemrograman terpopuler di dunia. Python adalah general purpose programming language yang dapat digunakan untuk berbagai aplikasi seperti Artificial Intelligence, IoT, Data Science, Web Development, hingga Automation.</p>
-          <p>Python sangat diminati karena fleksibilitasnya dan bisa digunakan di berbagai platform dan kasus penggunaan.</p>
-          <p><strong>Contoh Aplikasi Python:</strong> Web Development dengan Django atau Flask, Analisis Data dengan Pandas, dan Machine Learning dengan TensorFlow.</p>
-        </article>
-      </section>
+        <!-- Apa itu Python -->
+        <section class="main-section" id="Apa_itu_Bahasa_Pemrograman_Python?">
+            <header>Apa itu Bahasa Pemrograman Python?</header>
+            <img src="https://ictslab.com/wp-content/uploads/2019/03/d1326ca6cca8038cd115a061b4e2b3bc-840x430.png" alt="">
+            <article>
+                <p>Python merupakan bahasa pemrograman tingkat tinggi dan merupakan salah satu bahasa pemrograman terpopuler di dunia. Python adalah general purpose programming language yang dapat digunakan untuk berbagai aplikasi seperti Artificial Intelligence, IoT, Data Science, Web Development, hingga Automation.</p>
+                <p>Python sangat diminati karena fleksibilitasnya dan bisa digunakan di berbagai platform dan kasus penggunaan.</p>
+                <p><strong>Contoh Aplikasi Python:</strong> Web Development dengan Django atau Flask, Analisis Data dengan Pandas, dan Machine Learning dengan TensorFlow.</p>
+            </article>
+        </section>
 
-      <!-- Kenapa Python Terkenal -->
-      <section class="main-section" id="Kenapa_Python_Terkenal">
-        <header>Kenapa Python Begitu Terkenal?</header>
-        <article>
-          <p>Python terkenal karena sintaksnya yang sederhana dan menyerupai bahasa manusia, membuatnya mudah dipelajari oleh pemula. Bahasa ini juga memiliki berbagai library dan tools yang mendukung pengembangan aplikasi di banyak bidang.</p>
-          <p>Contoh sintaks Python:</p>
-          <pre><code>if 4 in [1,2,3,4]:
+        <!-- Kenapa Python Terkenal -->
+        <section class="main-section" id="Kenapa_Python_Begitu_Terkenal?">
+            <header>Kenapa Python Begitu Terkenal?</header>
+            <article>
+                <p>Python terkenal karena sintaksnya yang sederhana dan menyerupai bahasa manusia, membuatnya mudah dipelajari oleh pemula. Bahasa ini juga memiliki berbagai library dan tools yang mendukung pengembangan aplikasi di banyak bidang.</p>
+                <p>Contoh sintaks Python:</p>
+                <pre><code>if 4 in [1,2,3,4]:
     print("Terdapat angka 4!")</code></pre>
-          <p>Python juga menyediakan library seperti pandas untuk manipulasi data, TensorFlow untuk machine learning, dan banyak lagi, membuatnya ideal untuk berbagai bidang.</p>
-        </article>
-      </section>
+                <p>Python juga menyediakan library seperti pandas untuk manipulasi data, TensorFlow untuk machine learning, dan banyak lagi, membuatnya ideal untuk berbagai bidang.</p>
+            </article>
+        </section>
 
-      <!-- Tipe Data dalam Python -->
-      <section class="main-section" id="Tipe_Data">
-        <header>Tipe Data dalam Python</header>
-        <article>
-          <p>Python memiliki beberapa tipe data dasar yang berperilaku berbeda. Tipe data ini penting karena menentukan bagaimana operasi dilakukan terhadap nilai yang disimpan dalam variabel.</p>
-
-          <h3>Jenis Tipe Data:</h3>
-          <ul>
-            <li><strong>Number:</strong> Angka, bisa berupa bilangan bulat (<em>int</em>) atau desimal (<em>float</em>).</li>
-            <li><strong>Boolean:</strong> Nilai logika, yaitu <em>True</em> atau <em>False</em>.</li>
-            <li><strong>String:</strong> Sekumpulan karakter yang diapit tanda kutip, digunakan untuk teks.</li>
-            <li><strong>List:</strong> Sekumpulan item yang dapat diubah, disusun dalam urutan, dan dikelilingi oleh tanda kurung siku.</li>
-            <li><strong>Tuple:</strong> Sama seperti list, tetapi tidak dapat diubah (immutable) dan menggunakan tanda kurung biasa.</li>
-            <li><strong>Dictionary:</strong> Struktur data yang menyimpan pasangan <em>key-value</em> yang dapat diakses berdasarkan kunci.</li>
-          </ul>
-
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Tipe Data dalam Python -->
+        <section class="main-section" id="Tipe_Data_dalam_Python">
+            <header>Tipe Data dalam Python</header>
+            <article>
+                <p>Python memiliki beberapa tipe data dasar yang berperilaku berbeda. Tipe data ini penting karena menentukan bagaimana operasi dilakukan terhadap nilai yang disimpan dalam variabel.</p>
+                <h3>Jenis Tipe Data:</h3>
+                <ul>
+                    <li><strong>Number:</strong> Angka, bisa berupa bilangan bulat (<em>int</em>) atau desimal (<em>float</em>).</li>
+                    <li><strong>Boolean:</strong> Nilai logika, yaitu <em>True</em> atau <em>False</em>.</li>
+                    <li><strong>String:</strong> Sekumpulan karakter yang diapit tanda kutip, digunakan untuk teks.</li>
+                    <li><strong>List:</strong> Sekumpulan item yang dapat diubah, disusun dalam urutan, dan dikelilingi oleh tanda kurung siku.</li>
+                    <li><strong>Tuple:</strong> Sama seperti list, tetapi tidak dapat diubah (immutable) dan menggunakan tanda kurung biasa.</li>
+                    <li><strong>Dictionary:</strong> Struktur data yang menyimpan pasangan <em>key-value</em> yang dapat diakses berdasarkan kunci.</li>
+                </ul>
+                <h3>Contoh:</h3>
+                <pre><code>python
 # Mengecek tipe data
 x = 10
 print(type(x))  # Output: <class 'int'>
@@ -73,17 +72,17 @@ print(type(x))  # Output: <class 'int'>
 # Mengubah tipe data
 y = "10"
 print(int(y))  # Output: 10
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Tipe Data String -->
-      <section class="main-section" id="Tipe_Data_String">
-        <header>Tipe Data String</header>
-        <article>
-          <p>String di Python adalah kumpulan karakter yang dapat dimanipulasi menggunakan berbagai operasi seperti penjumlahan, perkalian, dan pengindeksan. String juga mendukung banyak fungsi bawaan.</p>
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Tipe Data String -->
+        <section class="main-section" id="Tipe_Data_String">
+            <header>Tipe Data String</header>
+            <article>
+                <p>String di Python adalah kumpulan karakter yang dapat dimanipulasi menggunakan berbagai operasi seperti penjumlahan, perkalian, dan pengindeksan. String juga mendukung banyak fungsi bawaan.</p>
+                <h3>Contoh:</h3>
+                <pre><code>python
 # Pengindeksan string
 s = "Python"
 print(s[0])  # Output: 'P'
@@ -92,145 +91,134 @@ print(s[-1])  # Output: 'n'
 # Fungsi bawaan
 teks = "Halo semua"
 print(teks.split())  # Output: ['Halo', 'semua']
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Operator dalam Python -->
-      <section class="main-section" id="Operator">
-        <header>Operator dalam Python</header>
-        <article>
-          <p>Operator adalah simbol yang digunakan untuk melakukan operasi pada variabel dan nilai. Python memiliki beberapa jenis operator yang dapat digunakan dalam berbagai konteks.</p>
-
-          <h3>Jenis-Jenis Operator:</h3>
-          <ul>
-            <li><strong>Operator Aritmatika:</strong> Digunakan untuk operasi matematika, seperti penjumlahan (+), pengurangan (-), perkalian (*), dan pembagian (/).</li>
-            <li><strong>Operator Perbandingan:</strong> Digunakan untuk membandingkan dua nilai, seperti sama dengan (==), lebih besar (>) dan lebih kecil (<).</li>
-            <li><strong>Operator Logika:</strong> Digunakan untuk operasi logika seperti <em>and</em>, <em>or</em>, dan <em>not</em>.</li>
-            <li><strong>Operator Penugasan:</strong> Operator seperti <em>=</em> digunakan untuk menetapkan nilai ke variabel.</li>
-          </ul>
-
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Operator dalam Python -->
+        <section class="main-section" id="Operator_dalam_Python">
+            <header>Operator dalam Python</header>
+            <article>
+                <p>Operator adalah simbol yang digunakan untuk melakukan operasi pada variabel dan nilai. Python memiliki beberapa jenis operator yang dapat digunakan dalam berbagai konteks.</p>
+                <h3>Jenis-Jenis Operator:</h3>
+                <ul>
+                    <li><strong>Operator Aritmatika:</strong> Digunakan untuk operasi matematika, seperti penjumlahan (+), pengurangan (-), perkalian (*), dan pembagian (/).</li>
+                    <li><strong>Operator Perbandingan:</strong> Digunakan untuk membandingkan dua nilai, seperti sama dengan (==), lebih besar (>) dan lebih kecil (<).</li>
+                    <li><strong>Operator Logika:</strong> Digunakan untuk operasi logika seperti <em>and</em>, <em>or</em>, dan <em>not</em>.</li>
+                    <li><strong>Operator Penugasan:</strong> Operator seperti <em>=</em> digunakan untuk menetapkan nilai ke variabel.</li>
+                </ul>
+                <h3>Contoh:</h3>
+                <pre><code>python
 x = 10
 y = 5
 print(x + y)  # Output: 15
 print(x > y)  # Output: True
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Variabel dan Identifier -->
-      <section class="main-section" id="Variabel">
-        <header>Variabel dan Identifier</header>
-        <article>
-          <p>Variabel digunakan untuk menyimpan nilai, dan identifier adalah nama yang diberikan untuk entitas seperti variabel dan fungsi. Identifier harus mematuhi aturan tertentu, seperti tidak boleh diawali dengan angka dan tidak boleh menggunakan kata kunci Python.</p>
-
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Variabel dan Identifier -->
+        <section class="main-section" id="Variabel_dan_Identifier">
+            <header>Variabel dan Identifier</header>
+            <article>
+                <p>Variabel digunakan untuk menyimpan nilai, dan identifier adalah nama yang diberikan untuk entitas seperti variabel dan fungsi. Identifier harus mematuhi aturan tertentu, seperti tidak boleh diawali dengan angka dan tidak boleh menggunakan kata kunci Python.</p>
+                <h3>Contoh:</h3>
+                <pre><code>python
 lebar = 10
 tinggi = 5
 luas = lebar * tinggi
 print("Luas =", luas)  # Output: Luas = 50
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Percabangan -->
-      <section class="main-section" id="Percabangan">
-        <header>Percabangan (If-Else)</header>
-        <article>
-          <p>Percabangan digunakan untuk mengeksekusi kode berdasarkan kondisi tertentu. Struktur <em>if-else</em> memungkinkan program memilih blok kode yang akan dijalankan berdasarkan kondisi logika.</p>
-
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Percabangan -->
+        <section class="main-section" id="Percabangan_If_Else">
+            <header>Percabangan If Else</header>
+            <article>
+                <p>Percabangan digunakan untuk mengeksekusi kode berdasarkan kondisi tertentu. Struktur <em>if-else</em> memungkinkan program memilih blok kode yang akan dijalankan berdasarkan kondisi logika.</p>
+                <h3>Contoh:</h3>
+                <pre><code>python
 umur = 18
 if umur < 20:
     print("Youth discount")  # Output: Youth discount
 elif umur >= 20:
     print("No discount")
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Looping -->
-      <section class="main-section" id="Looping">
-        <header>Looping (For dan While)</header>
-        <article>
-          <p>Python mendukung dua jenis loop utama: <em>for</em> dan <em>while</em>, yang memungkinkan pengulangan eksekusi blok kode.</p>
-
-          <h3>Contoh For Loop:</h3>
-          <pre><code>python
+        <!-- Looping -->
+        <section class="main-section" id="Looping_For_While">
+            <header>Looping For While</header>
+            <article>
+                <p>Python mendukung dua jenis loop utama: <em>for</em> dan <em>while</em>, yang memungkinkan pengulangan eksekusi blok kode.</p>
+                <h3>Contoh For Loop:</h3>
+                <pre><code>python
 # For loop
 for i in range(5):
     print("Hello")  # Output: Hello (diulang 5 kali)
-          </code></pre>
+                </code></pre>
 
-          <h3>Contoh While Loop:</h3>
-          <pre><code>python
+                <h3>Contoh While Loop:</h3>
+                <pre><code>python
 # While loop
 i = 0
 while i < 5:
     print(i)  # Output: 0, 1, 2, 3, 4
     i += 1
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Break dan Continue -->
-      <section class="main-section" id="Break_Continue">
-        <header>Break dan Continue</header>
-        <article>
-          <p><em>break</em> digunakan untuk menghentikan loop secara langsung, sedangkan <em>continue</em> digunakan untuk melewati satu iterasi dan melanjutkan ke iterasi berikutnya.</p>
-          
-          <h3>Contoh Break:</h3>
-          <pre><code>python
+        <!-- Break dan Continue -->
+        <section class="main-section" id="Break_dan_Continue">
+            <header>Break dan Continue</header>
+            <article>
+                <p><em>break</em> digunakan untuk menghentikan loop secara langsung, sedangkan <em>continue</em> digunakan untuk melewati satu iterasi dan melanjutkan ke iterasi berikutnya.</p>
+                <h3>Contoh Break:</h3>
+                <pre><code>python
 for i in range(10):
     if i == 5:
         break  # Menghentikan loop saat i = 5
     print(i)
-          </code></pre>
+                </code></pre>
 
-          <h3>Contoh Continue:</h3>
-          <pre><code>python
+                <h3>Contoh Continue:</h3>
+                <pre><code>python
 for i in range(10):
     if i == 5:
         continue  # Melewati iterasi saat i = 5
     print(i)
-          </code></pre>
-        </article>
-      </section>
+                </code></pre>
+            </article>
+        </section>
 
-      <!-- Mengambil Input -->
-      <section class="main-section" id="Input">
-        <header>Mengambil Input dari Pengguna</header>
-        <article>
-          <p>Fungsi <em>input()</em> digunakan untuk mengambil input dari pengguna. Input yang diambil dari <em>input()</em> selalu dalam bentuk string, jadi jika dibutuhkan input numerik, Anda harus melakukan konversi tipe data menggunakan <em>int()</em> atau <em>float()</em>.</p>
-
-          <h3>Contoh:</h3>
-          <pre><code>python
+        <!-- Mengambil Input -->
+        <section class="main-section" id="Mengambil_Input_dari_Pengguna">
+            <header>Mengambil Input dari Pengguna</header>
+            <article>
+                <p>Fungsi <em>input()</em> digunakan untuk mengambil input dari pengguna. Input yang diambil dari <em>input()</em> selalu dalam bentuk string, jadi jika dibutuhkan input numerik, Anda harus melakukan konversi tipe data menggunakan <em>int()</em> atau <em>float()</em>.</p>
+                <h3>Contoh:</h3>
+                <pre><code>python
 x = int(input("Masukkan angka: "))
 print("Angka yang dimasukkan adalah", x)
-          </code></pre>
-        </article>
-      </section>
-    </section>
-    <section class="main-section" id="Reference">
-      <header>Reference</header>
-      <article>
-        <ul>
-          <li>
-            Sumber referensi dikutip dari : 
-            <a
-              href="https://skilvul.com/courses/python-dasar/lessons/python-introduction/topics/apa-itu-python/"
-              target="_blank"
-              >Skilvul - Python Dasar</a
-            >
-          </li>
-        </ul>
-      </article>
-    </section>
-    </main>
-  </body>
-</html>
+                </code></pre>
+            </article>
+        </section>
 
+        <!-- Reference -->
+        <section class="main-section" id="Sumber_referensi">
+            <header>Sumber referensi</header>
+            <article>
+                <ul>
+                    <li>
+                        Sumber referensi dikutip dari : 
+                        <a href="https://skilvul.com/courses/python-dasar/lessons/python-introduction/topics/apa-itu-python/" target="_blank">Skilvul - Python Dasar</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+</body>
+</html>
